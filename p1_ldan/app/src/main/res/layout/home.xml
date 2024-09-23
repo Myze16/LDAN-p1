@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Um campo de texto para inserir o montante desejado ao final (em reais).-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colocar no values strings"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/valor_desejado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"></EditText>
+    </LinearLayout>
+
+    <!--Um campo de texto para inserir a taxa de juros anual (em porcentagem).-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colocar no values strings"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/taxa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"></EditText>
+    </LinearLayout>
+
+    <!--Um campo de texto para inserir o número de anos até a aposentadoria.-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colocar no values strings"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/periodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"></EditText>
+    </LinearLayout>
+
+    <!--Um botão "Calcular Contribuição Mensal" que, ao ser pressionado, leva à próxima tela.-->
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="6dp"
+        android:layout_marginTop="24dp"
+        android:drawableTint="#0867F6"
+        android:text="Colocar no values strings" />
+
+</LinearLayout>
