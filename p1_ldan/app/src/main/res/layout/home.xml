@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <!--Um campo de texto para inserir o montante desejado ao final (em reais).-->
     <LinearLayout
@@ -13,7 +14,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Colocar no values strings"
+            android:text="@string/valor_desejado"
             android:textSize="24dp" />
 
         <EditText
@@ -33,7 +34,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Colocar no values strings"
+            android:text="@string/taxa"
             android:textSize="24dp" />
 
         <EditText
@@ -53,7 +54,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Colocar no values strings"
+            android:text="@string/periodo"
             android:textSize="24dp" />
 
         <EditText
@@ -66,11 +67,11 @@
     <!--Um botão "Calcular Contribuição Mensal" que, ao ser pressionado, leva à próxima tela.-->
     <Button
         android:id="@+id/calcular"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawablePadding="6dp"
         android:layout_marginTop="24dp"
         android:drawableTint="#0867F6"
-        android:text="Colocar no values strings" />
+        android:text="@string/calcular" />
 
 </LinearLayout>

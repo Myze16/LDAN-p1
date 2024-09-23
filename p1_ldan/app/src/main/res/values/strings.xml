@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">p1_ldan</string>
+    <string name="calcular">Pressione para calcular</string>
+    <string name="valor_desejado">Insira o valor que deseja alcançar no final: </string>
+    <string name="taxa">Insira a taxa(anual) em %: </string>
+    <string name="periodo">Insira o período(anos) até a aposentadoria: </string>
 </resources>
