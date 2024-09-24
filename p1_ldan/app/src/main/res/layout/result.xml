@@ -33,7 +33,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Período:"
+            android:text="Período(Anos):"
             android:textSize="18dp" />
         <TextView
             android:id="@+id/result_periodo"
@@ -51,7 +51,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Taxa:"
+            android:text="Taxa(%):"
             android:textSize="18dp"/>
         <TextView
             android:id="@+id/result_taxa"
@@ -80,5 +80,14 @@
             android:text=""
             android:textSize="22dp"/>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_voltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="12dp"
+        android:layout_marginTop="18dp"
+        android:drawableTint="#0867F6"
+        android:text="Fazer novos calculos" />
 
 </LinearLayout>
