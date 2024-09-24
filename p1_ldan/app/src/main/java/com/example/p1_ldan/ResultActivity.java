@@ -12,18 +12,18 @@ public class ResultActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.result);
 
-        Integer periodo = getIntent().getIntExtra("periodo", 0);
-        double valorDesejado = getIntent().getDoubleExtra("ValorDesejado", 0);
+        int periodo = getIntent().getIntExtra("periodo", 0);
+        double valorDesejado = getIntent().getDoubleExtra("valorDesejado", 0);
         double taxa = getIntent().getDoubleExtra("taxa", 0);
 
         double resultado = this.calcularAposentadoria(valorDesejado, taxa, periodo);
 
         TextView textResult = findViewById(R.id.resultado);
-        textResult.setText(String.valueOf(resultado));
+        textResult.setText(String.valueOf(Math.round(resultado)));
     }
 
     private double calcularAposentadoria(double fv, double i, int n) {
-        double resultado = (fv * i) / (Math.pow((1 + i), n) - 1);
-        return resultado;
+        double potencia = Math.pow((1 + i), n);
+        return (fv * i) / (potencia - 1);
     }
 }

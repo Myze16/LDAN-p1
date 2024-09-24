@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 
                 double valorDesejado = Double.parseDouble(iValorDesejado.getText().toString());
                 double taxa = Double.parseDouble(iTaxa.getText().toString());
-                double periodo = Integer.parseInt(iPeriodo.getText().toString());
+                int periodo = Integer.parseInt(iPeriodo.getText().toString());
 
                 Intent resultCDI = new Intent(MainActivity.this, ResultActivity.class);
                 resultCDI.putExtra("taxa", taxa);
